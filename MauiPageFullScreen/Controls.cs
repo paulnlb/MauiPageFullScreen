@@ -2,7 +2,7 @@
 public static class Controls
 {
     private static DeviceServices Control { get; set; } = new();
-    private static bool IsFullScreen { get; set; } = false;
+    public static bool IsFullScreen { get; private set; } = false;
     /// <summary>
     /// Toggle Page Full Screen
     /// </summary>
@@ -21,10 +21,28 @@ public static class Controls
     }
     public static void FullScreen()
     {
-        Control.FullScreen();
+        if (!IsFullScreen)
+        {
+            Control.FullScreen();
+            IsFullScreen = true;
+        }
     }
     public static void RestoreScreen()
     {
+        if (IsFullScreen)
+        {
+            Control.RestoreScreen();
+            IsFullScreen = false;
+        }
+    }
+    public static void ForceFullScreen()
+    {
+        Control.FullScreen();
+        IsFullScreen = true;
+    }
+    public static void ForceRestoreScreen()
+    {
         Control.RestoreScreen();
+        IsFullScreen = false;
     }
 }
