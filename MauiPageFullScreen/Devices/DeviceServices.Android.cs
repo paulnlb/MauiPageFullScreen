@@ -41,7 +41,7 @@ internal class DeviceServices : IDeviceServices
         var types = Views.WindowInsetsCompat.Type.StatusBars() |
                     Views.WindowInsetsCompat.Type.NavigationBars();
 
-        windowInsetsControllerCompat.SystemBarsBehavior = Views.WindowInsetsControllerCompat.BehaviorShowBarsBySwipe;
+        windowInsetsControllerCompat.SystemBarsBehavior = Views.WindowInsetsControllerCompat.BehaviorShowTransientBarsBySwipe;
         windowInsetsControllerCompat.Hide(types);
     }
 }
