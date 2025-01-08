@@ -26,10 +26,10 @@
 		<RepositoryType>git</RepositoryType>
 		<PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
 		<PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
-		<RepositoryUrl>https://github.com/paulohloblin/MauiPageFullScreen</RepositoryUrl>
+		<RepositoryUrl>https://github.com/paulnlb/MauiPageFullScreen</RepositoryUrl>
 		<PackageTags>Full Screen, Maui, Android, iOS, Windows</PackageTags>
 		<PackageReleaseNotes>Full Screen support for dotnet Maui Page element</PackageReleaseNotes>
-		<PackageProjectUrl>https://github.com/paulohloblin/MauiPageFullScreen</PackageProjectUrl>
+		<PackageProjectUrl>https://github.com/paulnlb/MauiPageFullScreen</PackageProjectUrl>
 	</PropertyGroup>
 
 	<!-- Android -->
